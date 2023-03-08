@@ -2,7 +2,10 @@ package com.perfleet.step_definitions;
 
 import com.perfleet.pages.LoginPage;
 import com.perfleet.utilities.ConfigurationReader;
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
+import io.cucumber.java.en.When;
+
 public class LoginStepDefs {
 
 
@@ -37,8 +40,5 @@ public class LoginStepDefs {
       loginPage.login(username,password);
     }
 
-
-
-
-
 }
+
