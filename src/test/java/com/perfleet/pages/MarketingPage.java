@@ -26,9 +26,8 @@ public class MarketingPage {
     @FindBy(xpath = "//label[@class='ui-corner-all']")
     public List<WebElement> checkbox;
 
- //
- //   @FindBy(xpath = "(//label[@class='ui-corner-all'])[1]")
-    @FindBy(xpath = "//input[@id='column-c360']")
+
+    @FindBy(xpath = "//input[contains(@id,'column-c')][1]")
     public WebElement nameCheckbox;
 
 }

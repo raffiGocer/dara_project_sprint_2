@@ -14,7 +14,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",
         glue = "com/perfleet/step_definitions",
         dryRun = false,
-        tags = "@wip1",
+        tags = "@wip2 or @wip1",
         publish = true //generating a report with public link
 )
 public class CukesRunner {}

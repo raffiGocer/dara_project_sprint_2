@@ -32,11 +32,13 @@ public class MarketingStepDefs {
         BrowserUtils.sleep(2);
 
         marketingPage.campaignBtn.click();
+        BrowserUtils.sleep(2);
     }
     @When("the user clicks the manage filters button")
     public void the_user_clicks_the_manage_filters_button() {
         BrowserUtils.sleep(2);
         marketingPage.filterBtn.click();
+        BrowserUtils.sleep(2);
 
     }
     @Then("the user verifies five options are checked by default")
