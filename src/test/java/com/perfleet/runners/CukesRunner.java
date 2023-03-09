@@ -14,7 +14,9 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",
         glue = "com/perfleet/step_definitions",
         dryRun = false,
-        tags = "@wip1",
+        US11_RudiGocer
+        tags = "",
+
         publish = true //generating a report with public link
 )
 public class CukesRunner {}
