@@ -38,6 +38,7 @@ CalendarModulePage_RFG calendar = new CalendarModulePage_RFG();
     public void user_clicks_repeat_checkbox() {
         BrowserUtils.sleep(1);
         calendarModule.repeatCheckboxInput.click();
+
     }*/
  @And("user enters any number less then {int},like {string}")
  public void userEntersAnyNumberLessThenLike(String invalidInput) {
