@@ -1,13 +1,17 @@
 package com.perfleet.pages;
 
+import com.perfleet.utilities.BrowserUtils;
 import com.perfleet.utilities.Driver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class CalendarEvent extends BasePage{
+public class CalendarEvent {
+    public static BrowserUtils BrowserUtils;
 
-
+    public CalendarEvent(){
+ PageFactory.initElements(Driver.getDriver(),this);
+}
    @FindBy(xpath = "//*[@id=\"main-menu\"]/ul/li[5]/a/span")
     public WebElement activitiesModule;
 
@@ -15,7 +19,7 @@ public class CalendarEvent extends BasePage{
     public WebElement calendarEvents;
 
    @FindBy(xpath = "//a[@title='Create Calendar event']")
-    public WebElement createButton;
+    public static WebElement createCalendarEventButton;
 
    @FindBy(xpath = "//input[@id='recurrence-repeat-view168']")
     public WebElement repeatCheckboxInput;

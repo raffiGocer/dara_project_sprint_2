@@ -4,6 +4,7 @@ Feature: As a user, I should see error messages
   Scenario Outline:
 
 Given the user logged in as "<role>"
+  When user hover over the Activities button
 When user selects and clicks Calendar Event under Activities module
 And user clicks the Create Calendar Event button
 And user clicks Repeat checkbox
@@ -16,10 +17,11 @@ Examples:
 |sales manager|
 |store manager|
 
-
+  @US09
 Scenario Outline:
 
 Given the user logged in as "<role>"
+  When user hover over the Activities button
 When user selects and clicks Calendar Event under Activities module
 And user clicks the Create Calendar Event button
 And user clicks Repeat checkbox

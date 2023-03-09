@@ -18,7 +18,7 @@ Feature: As a user, I should be able to create a recurring calendar event
   Scenario Outline: User should see the error message "This value should not be blank."
   when the Calendar event repeat field is cleared(delete number 1)
     Given the user logged in as "<user>"
-    When user hover over the Activities button
+    When user hovers over the Activities button
     When user clicks the Calendar Event under the Activities button
     When user clicks the Create Calendar Event button
     And user checks the repeat checkbox
