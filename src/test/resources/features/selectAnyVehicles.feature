@@ -31,4 +31,4 @@ Feature: "User should select any vehicle"
     Examples:
       | user          |
       | store manager |
-      #| sales manager |
+      | sales manager |

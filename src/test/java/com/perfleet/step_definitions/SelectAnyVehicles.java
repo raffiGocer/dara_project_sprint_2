@@ -69,13 +69,16 @@ public class SelectAnyVehicles {
         Random rand = new Random();
         int index1 = rand.nextInt(vehicle_alex.checkboxList.size());
 
-        vehicle_alex.checkboxList.get().click();
+        vehicle_alex.checkboxList.get(index1).click();
         BrowserUtils.sleep(5);
+
+        Assert.assertTrue("passed", vehicle_alex.checkboxList.get(index1).isSelected());
 
 
     }
 
     @Then("checkbox is checked")
     public void checkboxIsChecked() {
+
     }
 }

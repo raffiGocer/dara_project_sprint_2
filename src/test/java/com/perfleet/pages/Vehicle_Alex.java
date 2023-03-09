@@ -24,6 +24,4 @@ public class Vehicle_Alex {
     @FindBy(xpath = "//tr//input[@type='checkbox']")
     public List<WebElement> checkboxList;
 
-    @FindBy(xpath = "//tr//input[@type='checkbox']")
-    public HashSet<WebElement> anycheckboxList;
 }
