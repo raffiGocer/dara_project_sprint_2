@@ -8,8 +8,8 @@ Given the user logged in as "<role>"
   When user clicks the Calendar Event under the Activities button
   When user clicks the Create Calendar Event button
   And user checks the repeat checkbox
-And user enters any number less then 1,like "-2"
-Then user sees an "<The value have not to be less than 1>" error message is displayed
+And user enters any number less then one,for example "-2"
+Then user sees an "The value have not to be less than 1" error message is displayed
 
 Examples:
 |role         |
@@ -25,8 +25,8 @@ Given the user logged in as "<role>"
     When user clicks the Calendar Event under the Activities button
     When user clicks the Create Calendar Event button
     And user checks the repeat checkbox
-And user enters any number higher than "99"
-Then user sees an "<The value have not to be more than 99>" error message is displayed
+And user enters any number higher than ninety nine, for example "100"
+Then user sees an "The value have not to be more than 99" error message is displayed
 
 Examples:
 |role         |
