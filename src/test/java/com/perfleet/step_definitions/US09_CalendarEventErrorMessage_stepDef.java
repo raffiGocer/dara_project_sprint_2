@@ -61,8 +61,15 @@ CalendarModulePage_RFG calendar = new CalendarModulePage_RFG();
     }
 
 
+    @And("user enters any number less then one,for example {string}")
+    public void userEntersAnyNumberLessThenOneForExample(String num) {
+        calendarModule.repeatEveryInputSpace.sendKeys(num);
 
 
     }
 
-
+    @And("user enters any number higher than ninety nine, for example {string}")
+    public void userEntersAnyNumberHigherThanNinetyNineForExample(String num1) {
+        calendarModule.repeatEveryInputSpace.sendKeys(num1);
+    }
+}
