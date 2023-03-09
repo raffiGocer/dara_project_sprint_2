@@ -24,4 +24,4 @@ Feature: As a user, I should manage filters on the Vehicle Costs page.
         | user          |
         | sales manager |
         | store manager |
-        | driver        |
+        
