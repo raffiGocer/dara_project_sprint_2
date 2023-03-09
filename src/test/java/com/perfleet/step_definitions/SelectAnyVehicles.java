@@ -72,7 +72,7 @@ public class SelectAnyVehicles {
         vehicle_alex.checkboxList.get(index1).click();
         BrowserUtils.sleep(5);
 
-        Assert.assertTrue("passed", vehicle_alex.checkboxList.get(index1).isSelected());
+        Assert.assertTrue(vehicle_alex.checkboxList.get(index1).isSelected());
 
 
     }
