@@ -5,10 +5,10 @@ Feature: As a user, I should see error messages
 
 Given the user logged in as "<role>"
   When user hover over the Activities button
-When user selects and clicks Calendar Event under Activities module
-And user clicks the Create Calendar Event button
-And user clicks Repeat checkbox
-And user enters any number less then "1"
+  When user clicks the Calendar Event under the Activities button
+  When user clicks the Create Calendar Event button
+  And user checks the repeat checkbox
+And user enters any number less then 1,like "-2"
 Then user sees an "<The value have not to be less than 1>" error message is displayed
 
 Examples:
@@ -21,10 +21,10 @@ Examples:
 Scenario Outline:
 
 Given the user logged in as "<role>"
-  When user hover over the Activities button
-When user selects and clicks Calendar Event under Activities module
-And user clicks the Create Calendar Event button
-And user clicks Repeat checkbox
+    When user hover over the Activities button
+    When user clicks the Calendar Event under the Activities button
+    When user clicks the Create Calendar Event button
+    And user checks the repeat checkbox
 And user enters any number higher than "99"
 Then user sees an "<The value have not to be more than 99>" error message is displayed
 
