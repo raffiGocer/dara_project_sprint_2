@@ -100,4 +100,8 @@ public class US09_CalendarEventErrorMessage_stepDef1 {
     }
 
 
+    @When("user clicks the Create Calendar Event button")
+    public void userClicksTheCreateCalendarEventButton() {
+        CalendarModule.createCalendarEventButton.click();
+    }
 }
