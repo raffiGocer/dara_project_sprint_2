@@ -1,6 +1,6 @@
 package com.perfleet.step_definitions;
 
-import com.perfleet.pages.CalendarEventsPage_AD;
+import com.perfleet.pages.US10_CalendarEventsPage_AD;
 import com.perfleet.pages.LoginPage;
 import com.perfleet.utilities.BrowserUtils;
 import com.perfleet.utilities.Driver;
@@ -8,15 +8,15 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
 
-public class CalendarEventsDescription_stepDefs_AD {
+public class US10_CalendarEventsDescription_stepDefs_AD {
 
     LoginPage loginPage = new LoginPage();
-    CalendarEventsPage_AD calendarEventsPage = new CalendarEventsPage_AD();
+    US10_CalendarEventsPage_AD calendarEventsPage = new US10_CalendarEventsPage_AD();
     @When("user selects and clicks Calendar Event under Activities module on the home page")
     public void user_selects_and_clicks_calendar_event_under_activities_module_on_the_home_page() {
         calendarEventsPage.navigateToModule("Activities", "Calendar Events");
     }
-    @When("user clicks the Create Calendar Event button")
+    @When("user clicks the Create Calendar Event button AD")
     public void user_clicks_the_create_calendar_event_button() {
         BrowserUtils.sleep(1);
         calendarEventsPage.createCalendarEventBtn.click();

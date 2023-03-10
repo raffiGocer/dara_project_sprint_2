@@ -5,9 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class CalendarEventsPage_AD extends BasePage{
+public class US10_CalendarEventsPage_AD extends BasePage{
 
-    public CalendarEventsPage_AD(){
+    public US10_CalendarEventsPage_AD(){
         PageFactory.initElements(Driver.getDriver(), this);
     }
     @FindBy(xpath = "//span[.='Calendar Events']")
