@@ -5,8 +5,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class Dashboard_Alex {
-    public Dashboard_Alex(){
+public class US07_Dashboard {
+    public US07_Dashboard(){
         PageFactory.initElements(Driver.getDriver(), this);
     }
 

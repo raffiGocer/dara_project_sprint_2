@@ -1,7 +1,7 @@
 package com.perfleet.step_definitions;
 
-import com.perfleet.pages.Dashboard_Alex;
-import com.perfleet.pages.Vehicle_Alex;
+import com.perfleet.pages.US07_Dashboard;
+import com.perfleet.pages.US07_Vehicle;
 import com.perfleet.utilities.BrowserUtils;
 import com.perfleet.utilities.Driver;
 import io.cucumber.java.en.And;
@@ -11,22 +11,21 @@ import org.junit.Assert;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 
-import javax.swing.*;
-import java.util.Arrays;
 import java.util.Random;
 
-public class SelectAnyVehicles {
+public class US07_SelectAnyVehicles {
 
-    Dashboard_Alex dashboard_alex = new Dashboard_Alex();
+    US07_Dashboard dashboard_alex = new US07_Dashboard();
     Actions action = new Actions(Driver.getDriver());
-    Vehicle_Alex vehicle_alex = new Vehicle_Alex();
+    US07_Vehicle vehicle_alex = new US07_Vehicle();
 
 
     @And("Click the vehicle under the Fleet")
     public void clickTheVehicleUnderTheFleet() {
 
-        BrowserUtils.sleep(3);
+        BrowserUtils.sleep(5);
         action.moveToElement(dashboard_alex.fleet_hover).perform();
+        BrowserUtils.sleep(1);
         dashboard_alex.vehicles_btn.click();
     }
 

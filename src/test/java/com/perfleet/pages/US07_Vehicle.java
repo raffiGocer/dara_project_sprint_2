@@ -5,13 +5,12 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import java.util.HashSet;
 import java.util.List;
 
 
-public class Vehicle_Alex {
+public class US07_Vehicle {
 
-    public Vehicle_Alex() {
+    public US07_Vehicle() {
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
