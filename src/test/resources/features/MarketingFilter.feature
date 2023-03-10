@@ -1,7 +1,7 @@
 @login
 Feature: Users should be able to login
 
-  @wip1
+  @wipAliCan
   Scenario Outline:I want to manage filters on the Marketing page.
 
     Given the user logged in as "<user>"
@@ -16,7 +16,7 @@ Feature: Users should be able to login
       | sales manager |
 
 
-  @wip2
+  @wipAliCan
   Scenario Outline:I want to verify filters can be unchecked on filter page.
 
     Given the user logged in as "<user>"
