@@ -16,7 +16,7 @@ public class CalendarEventsDescription_stepDefs_AD {
     public void user_selects_and_clicks_calendar_event_under_activities_module_on_the_home_page() {
         calendarEventsPage.navigateToModule("Activities", "Calendar Events");
     }
-    @When("user clicks the Create Calendar Event button")
+    @When("user clicks the Create Calendar Event button AD")
     public void user_clicks_the_create_calendar_event_button() {
         BrowserUtils.sleep(1);
         calendarEventsPage.createCalendarEventBtn.click();
