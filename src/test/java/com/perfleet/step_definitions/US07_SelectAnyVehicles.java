@@ -67,7 +67,7 @@ public class US07_SelectAnyVehicles {
         //String[] array = set.toArray(new String[set.size()]);
         Random rand = new Random();
         int index1 = rand.nextInt(vehicle_alex.checkboxList.size());
-
+        BrowserUtils.sleep(5);
         vehicle_alex.checkboxList.get(index1).click();
         BrowserUtils.sleep(5);
 
