@@ -18,7 +18,7 @@ public class US10_CalendarEventsDescription_stepDefs_AD {
     }
     @When("user clicks the Create Calendar Event button AD")
     public void user_clicks_the_create_calendar_event_button() {
-        BrowserUtils.sleep(1);
+        BrowserUtils.sleep(5);
         calendarEventsPage.createCalendarEventBtn.click();
     }
     @When("user types  {string} in Description field")
