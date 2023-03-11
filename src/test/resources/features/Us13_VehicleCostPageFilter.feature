@@ -1,4 +1,4 @@
-
+@smoke
 Feature: As a user, I should manage filters on the Vehicle Costs page.
 
   @wipIK
