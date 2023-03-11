@@ -1,4 +1,4 @@
- @login @smoke
+ @login 
 Feature: As a user, I want to filter customer info on the Account page.
 
   Background: User is already in the log in page
