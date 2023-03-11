@@ -20,25 +20,25 @@ public class MarketingStepDefs {
 
     @When("the user hovers over marketing button")
     public void the_user_hovers_over_marketing_button() {
-        BrowserUtils.sleep(2);
+        BrowserUtils.sleep(5);
 
         actions.moveToElement(marketingPage.marketingBtn).perform();
-        BrowserUtils.sleep(2);
+        BrowserUtils.sleep(5);
 
     }
 
     @When("the user clicks campaigns under marketing")
     public void the_user_clicks_campaigns_under_marketing() {
-        BrowserUtils.sleep(2);
+        BrowserUtils.sleep(5);
 
         marketingPage.campaignBtn.click();
-        BrowserUtils.sleep(2);
+        BrowserUtils.sleep(5);
     }
     @When("the user clicks the manage filters button")
     public void the_user_clicks_the_manage_filters_button() {
-        BrowserUtils.sleep(2);
+        BrowserUtils.sleep(5);
         marketingPage.filterBtn.click();
-        BrowserUtils.sleep(2);
+        BrowserUtils.sleep(5);
 
     }
     @Then("the user verifies five options are checked by default")
@@ -53,7 +53,7 @@ public class MarketingStepDefs {
     public void theUserUncheckOneOrMoreFilterOptions() {
 
         marketingPage.nameCheckbox.click();
-        BrowserUtils.sleep(2);
+        BrowserUtils.sleep(5);
         }
 
 
