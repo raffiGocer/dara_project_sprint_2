@@ -17,21 +17,21 @@ public class Us13_VehicleCostPageFilterDefs {
 
     @When("user hover over the Fleet button")
     public void user_hover_over_the_fleet_button() {
-        BrowserUtils.sleep(2);
+        BrowserUtils.sleep(5);
 
         actions.moveToElement(vehicleCostPage.fleetButton).perform();
-        BrowserUtils.sleep(2);
+        BrowserUtils.sleep(5);
 
     }
     @Then("user clicks the Vehicle Cost button under the Fleet button")
     public void user_clicks_the_vehicle_cost_button_under_the_fleet_button() {
-        BrowserUtils.sleep(2);
+        BrowserUtils.sleep(5);
         vehicleCostPage.vehicleCostButton.click();
     }
 
     @Then("user verify there are three columns in the table")
     public void user_verify_there_are_in_the_table() {
-
+        BrowserUtils.sleep(5);
         for (WebElement each : vehicleCostPage.columnsNames) {
             each.isDisplayed();
         }
@@ -40,6 +40,7 @@ public class Us13_VehicleCostPageFilterDefs {
     @Then("user clicks the first checkbox")
     public void user_clicks_the_first_checkbox() {
         vehicleCostPage.checkBox.click();
+        BrowserUtils.sleep(5);
     }
     @Then("user verify all the vehicle costs are checked")
     public void user_verify_all_the_vehicle_costs_are_checked() {
