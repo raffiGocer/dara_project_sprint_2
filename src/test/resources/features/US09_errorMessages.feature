@@ -1,4 +1,4 @@
-@US09 @smoke
+@US09 
 Feature: As a user, I should see error messages
   when I enter an invalid integer into the calendar repeat day input box.
 
