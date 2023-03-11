@@ -14,6 +14,7 @@ public class US10_CalendarEventsDescription_stepDefs_AD {
     US10_CalendarEventsPage_AD calendarEventsPage = new US10_CalendarEventsPage_AD();
     @When("user selects and clicks Calendar Event under Activities module on the home page")
     public void user_selects_and_clicks_calendar_event_under_activities_module_on_the_home_page() {
+        BrowserUtils.sleep(5);
         calendarEventsPage.navigateToModule("Activities", "Calendar Events");
     }
     @When("user clicks the Create Calendar Event button AD")
@@ -23,11 +24,13 @@ public class US10_CalendarEventsDescription_stepDefs_AD {
     }
     @When("user types  {string} in Description field")
     public void user_types_in_description_field(String string) {
+        BrowserUtils.sleep(5);
         Driver.getDriver().switchTo().frame(calendarEventsPage.iframe);
         calendarEventsPage.descriptionBox.sendKeys(string);
     }
     @Then("user is able to see the text {string} in the Description field")
     public void user_is_able_to_see_the_text_in_the_description_field(String string) {
+        BrowserUtils.sleep(5);
         Assert.assertEquals(string, calendarEventsPage.textInDescriptionBox.getText());
     }
 }
