@@ -24,7 +24,7 @@ public class Hooks {
     @Before (order = 1)
     public void setupMethod(){
 
-        Driver.getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(40));
+        Driver.getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(40)); //change implicitelyWaut to 40sec for slow VM - virtual machines
 
         Driver.getDriver().get(ConfigurationReader.getProperty("url"));
     }
@@ -49,7 +49,7 @@ public class Hooks {
 
 
 
-        BrowserUtils.sleep(5);
+        BrowserUtils.sleep(5); // change the sleep time 5 for slower machines  
         Driver.closeDriver();
 
     }
