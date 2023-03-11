@@ -1,4 +1,4 @@
-@US10_AD @smoke
+@US10_AD 
 Feature: User should be able to write the “Description” when he creates a calendar event.
 
   @US10_AD_AC1
