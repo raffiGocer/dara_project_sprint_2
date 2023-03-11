@@ -1,3 +1,4 @@
+@smoke
 Feature: Accessing the vehicle odometer page
 
 @wip1
