@@ -1,4 +1,4 @@
-@smoke
+
 Feature: As a user, I should be able to create a recurring calendar event
 
   @wipRFG
